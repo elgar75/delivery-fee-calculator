@@ -1,0 +1,14 @@
+$theme-colors: (
+  'primary': rgb(232, 249, 255),
+  'primary-hover': rgb(214, 239, 250),
+  'primary-text': rgb(0, 157, 224),
+);
+
+@import 'bootstrap';
+
+.btn-primary {
+  background-color: map-get($theme-colors, 'primary');
+}
+.btn-primary:hover {
+  background-color: map-get($theme-colors, 'primary-hover');
+}
